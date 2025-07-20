@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roulette</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <select name="lang" id="language">
+        <option value="0">English</option>
+        <option value="1">한국어</option>
+        <option value="2">日本語</option>
+        <option value="3">中文</option>
+    </select>
+    <div class="input-container">
+        <input type="text" id="item-name" placeholder="Item Name">
+        <input type="number" id="item-quantity" placeholder="Quantity" min="1" value="1">
+        <button id="add-btn">Add Item</button>
+    </div>
+    <div class="roulette-container">
+        <canvas id="canvas" width="500" height="500"></canvas>
+        <button id="spin-btn">Spin</button>
+    </div>
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

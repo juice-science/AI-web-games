@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://d3js.org/d3.v7.min.js">
+
+        // svg를 그릴 div 선택 
+        const svg = d3.select('#d3_test')
+            .append('svg')
+            .attr('width', '100%')
+            .attr('height', '100vh')
+            .style('background-color', 'pink')
+
+        // circle 추가 !!
+        svg.append('circle')
+            .attr('fill', 'blue')
+            .attr('r', 30)
+            .attr('cx', 35)
+            .attr('cy', 35)
+
+        // rect 추가 !!
+        svg.append('rect')
+            .attr('fill', 'red')
+            .attr('x', 70)
+            .attr('y', 50)
+            .attr('rx', 5)
+            .attr('width', 40)
+            .attr('height', 40)
+
+        // line 추가 !!
+        svg.append('line')
+            .attr('x1', 10)
+            .attr('x2', 60)
+            .attr('y1', 60)
+            .attr('y2', 90)
+            .attr('stroke', 'yellow')
+    </script>
+</head>
+
+<body>
+
+    <div id="d3_test"></div>
+</body>
+
+</html>
