@@ -9,15 +9,18 @@
 </head>
 
 <body>
-    <select name="lang" id="language">
-        <option value="0">English</option>
-        <option value="1">한국어</option>
-        <option value="2">日本語</option>
-        <option value="3">中文</option>
-    </select>
+    <div>
+        <select name="lang" id="language">
+            <option value="0">English</option>
+            <option value="1">한국어</option>
+            <!-- <option value="2">日本語</option>
+            <option value="3">中文</option> -->
+        </select>
+        <button id="reset-btn">Reset</button>
+    </div>
     <div class="input-container">
         <input type="text" id="item-name" placeholder="Item Name">
-        <input type="number" id="item-quantity" placeholder="Quantity" min="1" value="1">
+        <input type="number" id="item-quantity" placeholder="Quantity" min="1" max=20 value="1">
         <button id="add-btn">Add Item</button>
     </div>
     <div class="roulette-container">

@@ -5,6 +5,7 @@ const itemNameInput = document.getElementById('item-name');
 const itemQuantityInput = document.getElementById('item-quantity');
 const addBtn = document.getElementById('add-btn');
 const languageInput = document.getElementById('language');
+const resetBtn = document.getElementById('reset-btn');
 
 let language = '0';
 let items = [];
@@ -23,8 +24,15 @@ function getText(key, replacements = {}) {
     return text;
 }
 
+resetBtn.addEventListener("click", e => {
+    // todo delelte all element 
+})
 languageInput.addEventListener("change", e => {
     language = e.target.value;
+    addBtn.textContent = getText('add-btn');
+    spinBtn.textContent = getText('spin-btn');
+    itemNameInput.placeholder = getText('itemNameInput');
+    resetBtn.textContent = getText('reset-btn');
     drawRoulette();
 })
 
