@@ -17,7 +17,7 @@ body {
     text-align: center;
 }
 
-canvas {
+#canvas {
     display: block;
     margin: 0 auto;
 }
